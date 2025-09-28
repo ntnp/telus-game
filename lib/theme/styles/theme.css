@@ -1,0 +1,40 @@
+@import './colors.css';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-*: initial;
+
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-current: currentColor;
+  --color-transparent: transparent;
+
+  --color-gray-1: var(--slate-1);
+  --color-gray-2: var(--slate-2);
+  --color-gray-3: var(--slate-3);
+  --color-gray-4: var(--slate-4);
+  --color-gray-5: var(--slate-5);
+  --color-gray-6: var(--slate-6);
+  --color-gray-7: var(--slate-7);
+  --color-gray-8: var(--slate-8);
+  --color-gray-9: var(--slate-9);
+  --color-gray-10: var(--slate-10);
+  --color-gray-11: var(--slate-11);
+  --color-gray-12: var(--slate-12);
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+  --color-background: var(--color-gray-1);
+  --color-foreground: var(--color-gray-12);
+
+  --color-primary: var(--color-gray-12);
+  --color-primary-foreground: var(--color-gray-1);
+  --color-subtle: var(--color-gray-6);
+  --color-subtle-foreground: var(--color-gray-11);
+  --color-muted: var(--color-gray-4);
+  --color-muted-foreground: var(--color-gray-10);
+}

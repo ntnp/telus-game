@@ -1,0 +1,6 @@
+@import '@radix-ui/colors/slate.css';
+@import '@radix-ui/colors/slate-dark.css';
+
+.dark {
+  color-scheme: dark;
+}
