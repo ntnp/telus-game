@@ -23,6 +23,10 @@
       "_app/*": ["./src/*"],
       "_public/*": ["./public/*"],
 
+      "_types/*": ["./lib/types/*"],
+
+      "_api/*": ["./src/api/*"],
+
       "_hooks/*": ["./lib/hooks/*"],
 
       "_utils/*": ["./lib/utils/*"],

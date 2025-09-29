@@ -6,6 +6,7 @@ import { cn } from '_utils/ui/tailwind';
 import { geistMono, geistSans } from '_theme/fonts';
 
 import { ThemeProviders } from '_app/features/App/ThemeProviders';
+import { SwrProvider } from '_features/App/SwrProvider';
 
 export const metadata: Metadata = {
   title: 'Natan Pereira',
@@ -23,7 +24,9 @@ export default function RootLayout({
         <body className={cn(geistSans.variable, geistMono.variable, 'antialiased')}>
 
           <div id="wrapper">
-            {children}
+            <SwrProvider>
+              {children}
+            </SwrProvider>
           </div>
 
         </body>
